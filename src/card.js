@@ -13,8 +13,6 @@ function evaluateGuess(guess, correctAnswer) {
   return guess === correctAnswer ? 'Correct!' : 'Incorrect!';
 }
 
-
-
 module.exports = {
   createCard,
   evaluateGuess,

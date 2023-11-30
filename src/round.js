@@ -24,16 +24,11 @@ function takeTurn(guess, round) {
 }
 
 function calculatePercentCorrect(round) {
-  return (
-    ((round.deck.length - round.incorrectGuesses.length) / round.deck.length) *
-    100
-  );
+  return (((round.deck.length - round.incorrectGuesses.length) / round.deck.length) * 100);
 }
 
 function endRound(round) {
-  return `** Round over! ** You answered ${calculatePercentCorrect(
-    round
-  )}% of the questions correctly!`;
+  return `** Round over! ** You answered ${calculatePercentCorrect(round)}% of the questions correctly!`;
 }
 
 module.exports = {
