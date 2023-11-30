@@ -59,7 +59,7 @@ describe('createCard', function () {
   });
 });
 
-describe('evaluateGuess', function() {
+describe('evaluateGuess', function () {
   it('should be a function', function () {
     expect(createCard).to.be.a('function');
   });
@@ -71,10 +71,10 @@ describe('evaluateGuess', function() {
       ['object', 'array', 'function'],
       'object'
     );
-    let guess = 'object'
-    let correctAnswer = card.correctAnswer
+    let guess = 'object';
+    let correctAnswer = card.correctAnswer;
 
-    let feedback = evaluateGuess(guess, correctAnswer)
+    let feedback = evaluateGuess(guess, correctAnswer);
 
     expect(feedback).to.equal('Correct!');
   });
@@ -86,11 +86,11 @@ describe('evaluateGuess', function() {
       ['object', 'array', 'function'],
       'object'
     );
-    let guess = 'array'
-    let correctAnswer = card.correctAnswer
+    let guess = 'array';
+    let correctAnswer = card.correctAnswer;
 
-    let feedback = evaluateGuess(guess, correctAnswer)
+    let feedback = evaluateGuess(guess, correctAnswer);
 
     expect(feedback).to.equal('Incorrect!');
   });
-})
+});
