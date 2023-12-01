@@ -1,17 +1,13 @@
 const { prototypeData } = require('./data');
 
-function createCard(id, question, possibleAnswers, correctAnswer) {
-  return {
-    id: id,
-    question: question,
-    answers: possibleAnswers,
-    correctAnswer: correctAnswer,
-  };
-}
+const createCard = (id, question, possibleAnswers, correctAnswer) => ({
+  id,
+  question,
+  answers: possibleAnswers,
+  correctAnswer,
+});
 
-function evaluateGuess(guess, correctAnswer) {
-  return guess === correctAnswer ? 'Correct!' : 'Incorrect!';
-}
+const evaluateGuess = (guess, correctAnswer) => (guess === correctAnswer ? 'Correct!' : 'Incorrect!');
 
 module.exports = {
   createCard,
