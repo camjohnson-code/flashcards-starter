@@ -18,7 +18,7 @@ The project involves creating a command-line flashcard simulation where users ca
 - Chai
 
 
-## Install/Setup Instruction
+## Install/Setup Instructions
 
 To install this on your machine, follow these steps:
 
